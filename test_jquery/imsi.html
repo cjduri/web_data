@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- <script src="./jquery-3.6.0.js"></script> -->
+    <script src="./imsi_fn.js"></script>
+    <!-- <script>
+        $(document).ready(function() {
+            // 전역 스코프에서 함수 정의
+            window.over = function(obj) {
+                obj.src = "./logo.png";
+            }
+            
+            window.out = function(obj) {
+                obj.src = "./logob.png";
+            }
+        });
+    </script>     -->
+    <meta charset="UTF-8">
+    <title>배경 색상 변경하기</title>
+</head>
+<body>
+   <h3>마우스 올려 보세요</h3>
+    <hr/>
+    <img src="./logo.png" alt="이미지"
+        onmouseover="over(this)"
+        onmouseout="out(this)">
+    <hr/>
+    <img src="./logo.png" alt="이미지"
+		onmouseover="this.src='./logo.png'"
+		onmouseout="this.src='./logob.png'">
+</body>
+</html>
